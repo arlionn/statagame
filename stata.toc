@@ -1,4 +1,4 @@
-v 1.1
+v 1.2
 d 'STATAGAME': play the statagame  {break}
 d version (release) as well as their dependencies from 
 d {browse "http://www.github.com/cobusburger/statagame":statagame} website
