@@ -408,7 +408,8 @@ capture program drop animation
 program define animation
 
 preserve
-qui import animation.txt, clear 
+qui import  delimited "$animepath", clear 
+ 
 set more off
 
 gl t0 = mod($round + $task,3) + 1
@@ -490,7 +491,7 @@ capture program drop statagame
 program define statagame
 
 set more off
-global     local = 1
+global     local = 0
 //lobal       dir = "c:\statagame\table2"
 global    rounds = 6
 global        ip = "18.220.63.74"    // could call the website to look for most recent ip
